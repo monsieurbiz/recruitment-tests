@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php
+{
+	"name": "PHP",
+	"image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
+	// "customizations": {},
+	"forwardPorts": [
+		8000
+	],
+	"features": {
+		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {}
+	},
+	"postCreateCommand": "symfony local:server:start"
+}
