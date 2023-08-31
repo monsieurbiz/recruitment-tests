@@ -8,7 +8,15 @@
 		8000
 	],
 	"features": {
-		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {}
+		"ghcr.io/shyim/devcontainers-features/symfony-cli:0": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
-	"postCreateCommand": "symfony local:server:start"
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vsliveshare.vsliveshare"
+			]
+		}
+	},
+	"postStartCommand": "symfony local:server:start"
 }
